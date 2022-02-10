@@ -7,13 +7,37 @@
     <title>Template</title>
 
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
    
-    <main class="container">
-        <section class="products">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloremque debitis quas rerum doloribus eveniet quidem nobis nihil corporis, vero quod, totam deserunt ipsam. Delectus officiis voluptas possimus suscipit alias?
-        </section>
-    </main>
+    <div class="container">
+        <form class="row m-4">
+            <div class="col-6 d-flex mt-3">
+                <input class="form-control" type="search">
+                <button type="submit" class=" ms-2 btn btn-primary">Search</button>
+            </div>
+        </form>
+       <div id="list" class="row" >
+        
+       </div>
+    </div>
+    <template id="cardtemplate">
+
+        <div class="p-4 filim col-12  ">
+        <div class="filim__card me-5 ">
+            <img class="card__img" src="https://picsum.photos/id/1/300/380" alt="">
+            <h3 class="filim__card__titel">titel</h3>
+            <div class="filim__card__div">
+                <h3 class="filim__card__div__id">1</h3>
+                <button class="btn btn-danger">bmark</button>
+                <button class="btn btn-warning">more</button>
+                <h3 class="filim__card__div__year">1111</h3>
+            </div>
+        </div>
+    </div>
+
+    </template>
 </body>
+<script src="./js/main.js"></script>
 </html>
